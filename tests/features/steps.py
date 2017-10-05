@@ -9,7 +9,7 @@ def cuando_realizo_la_operacion(step):
 @step(u'Dado que ingreso el numero "([^"]*)"')
 def dado_que_ingreso_el_numero_group1(step, num1):
     world.cal = Edad()
-    world.cal.edad(int(num1))
+    world.cal.obtener_edad(int(num1))
 
 @step(u'entonces la etapa sera "([^"]*)"')
 def entonces_la_etapa_sera_group1(step, esperado):
