@@ -8,7 +8,7 @@ def cuando_realizo_la_operacion(step):
 
 @step(u'Dado que ingreso el numero "([^"]*)"')
 def dado_que_ingreso_el_numero_group1(step, num1):
-    world.cal = Calculadora()
+    world.cal = Edad()
     world.cal.edad(int(num1))
 
 @step(u'entonces la etapa sera "([^"]*)"')
